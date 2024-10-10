@@ -27,79 +27,84 @@ C language mein do tarah ke comments hote hain:
 2- Multi-line comment
 
 ### Single-line Comment
-C mein single-line comment ( // ) double forward slash se start hota hai. 
+* C mein single-line comment ( // ) double forward slash se start hota hai. 
 ~~~
  // Ye ek single line comment hai
-```
+~~~
 ### Multi-line Comment
-Multi-line comment C mein forward slash aur asterisk ( /* ) se start hota hai aur asterisk aur forward slash ( */ ) par end hota hai. Jo bhi text /* aur */ ke beech mein likha hota hai, usse compiler ignore karta hai.
-Ye program mein multiple lines ko comment karne ke liye use hota hai.
-```
+* Multi-line comment C mein forward slash aur asterisk ( /* ) se start hota hai aur asterisk aur forward slash ( */ ) par end hota hai. Jo bhi text /* aur */ ke beech mein likha hota hai, usse compiler ignore karta hai.
+* Ye program mein multiple lines ko comment karne ke liye use hota hai.
+  
+ ~~~
  /* Hello Isha
  Are You Fine? */
-```
+~~~
 
-First Program in C
-arduino
-Copy code
+# First Program in C
+~~~
 #include<stdio.h>
 int main(){
   printf("Hello World");
   return 0;
 }
+~~~
 Output
-Copy code
+~~~
 Hello World
-Installation
+~~~
+
+# Installation
 Visual Studio Code ko download karne ke liye, aapko neeche diye gaye steps ko follow karna hoga:
 
-Step 1:- Browser par "Download VsCode" search karo.
+* Step 1:- Browser par "Download VsCode" search karo.
 
-Step 2:- Pehli link par click karo.<a href="https://code.visualstudio.com/download">Visual Studio Code</a>
+* Step 2:- Pehli link par click karo.<a href="https://code.visualstudio.com/download">Visual Studio Code</a>
 
-Step 3:- Apne Operating System ke hisaab se sahi download option select karo. Agar aap Ubuntu use kar rahe ho, to aapka download ek .deb file hoga.
+* Step 3:- Apne Operating System ke hisaab se sahi download option select karo. Agar aap Ubuntu use kar rahe ho, to aapka download ek .deb file hoga.
 
 <img src="https://res.cloudinary.com/omaha-code/w_768,h_502,c_fit/omaha-code-cdn/2018/12/Download-Visual-Studio-Code.png" alt="VS Code" height="350px" width="450px">
-Step 4:- VS Code download hone ke baad, Linux mein terminal open karo ya shortcut ke liye (ctrl + alt + t) press karo.
 
-Step 5:- System ko update hone ke liye command type karo: $ sudo apt update
+* Step 4:- VS Code download hone ke baad, Linux mein terminal open karo ya shortcut ke liye (ctrl + alt + t) press karo.
 
-Step 7:- System update hone ke baad, Download Directory mein jao: cd ~/Downloads
+* Step 5:- System ko update hone ke liye command type karo: $ sudo apt update
 
-Step 8:- .deb Package ko install karne ke liye ye command type karo aur apna password enter karo: sudo dpkg -i code*.deb
+* Step 7:- System update hone ke baad, Download Directory mein jao: cd ~/Downloads
 
-Step 9:- Agar dependencies fix karni hain to ye command run karo: sudo apt install -f
+* Step 8:- .deb Package ko install karne ke liye ye command type karo aur apna password enter karo: sudo dpkg -i code*.deb
 
-Step 10:- VS Code ko launch karo:- Aap VS Code ko terminal mein code type karke ya application menu mein dhoondh kar open kar sakte ho.
+* Step 9:- Agar dependencies fix karni hain to ye command run karo: sudo apt install -f
+
+* Step 10:- VS Code ko launch karo:- Aap VS Code ko terminal mein code type karke ya application menu mein dhoondh kar open kar sakte ho.
 
 
 
-System Requirement
+# System Requirement
 Visual Studio Code (VS Code) chalane ke liye, aapko apne system ki requirements ko ensure karna hoga. Niche di gayi requirements ko aapko meet karna hoga:
 
-OS: Ubuntu 14.04+, Fedora 24+, CentOS 7+
-RAM: Kam se kam 4 GB RAM (8 GB ya usse zyada recommended)
-Disk Space: 512 MB free disk space (2 GB ya usse zyada recommended)
-Processor: Pentium ya faster processor
-Mere system ki configurations aur software versions:
-OS: Ubuntu 24.04 LTS
-RAM: 8GB
-Disk Space: 256 GB
-Processor: 11th Gen Intel Core i3
-VS Code Version: 1.91.1
-Variables, Constant and Keywords
-Variables
-Variables programming mein pieces of information ko store karne ke liye use hote hain.
-Ye ek tarah ke containers hote hain jo kuch data store karte hain (jaise hum rice, dal, sugar ko alag containers mein rakhte hain).
-Rules of Naming Variables
-Pehla character alphabet ya underscore(_) hona chahiye. NOTE:- Underscore ke alawa kisi special symbol ka use allowed nahi hai.
-Variables mein commas ya blanks allowed nahi hain.
-Variable names case sensitive hote hain. Jaise int STUDENT=10; aur int student=10; dono alag-alag variables hain.
-Syntax of Declaring Variables
+* OS: Ubuntu 14.04+, Fedora 24+, CentOS 7+
+* RAM: Kam se kam 4 GB RAM (8 GB ya usse zyada recommended)
+* Disk Space: 512 MB free disk space (2 GB ya usse zyada recommended)
+* Processor: Pentium ya faster processor
+#### Mere system ki configurations aur software versions:
+* OS: Ubuntu 24.04 LTS
+* RAM: 8GB
+* Disk Space: 256 GB
+* Processor: 11th Gen Intel Core i3
+* VS Code Version: 1.91.1
+* Variables, Constant and Keywords
+  
+# Variables
+* Variables programming mein pieces of information ko store karne ke liye use hote hain.
+* Ye ek tarah ke containers hote hain jo kuch data store karte hain (jaise hum rice, dal, sugar ko alag containers mein rakhte hain).
+### Rules of Naming Variables
+* Pehla character alphabet ya underscore(_) hona chahiye. NOTE:- Underscore ke alawa kisi special symbol ka use allowed nahi hai.
+* Variables mein commas ya blanks allowed nahi hain.
+* Variable names case sensitive hote hain. Jaise int STUDENT=10; aur int student=10; dono alag-alag variables hain.
+#### Syntax of Declaring Variables
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221202181339/Cvariables1.png" alt="Features" height="250px" width="550px">
-WAP for Variables
-arduino
-Copy code
+
+#### WAP for Variables
+~~~
 #include <stdio.h>
 
 int main() {
@@ -117,26 +122,27 @@ int main() {
   printf("Salary: %.2f\n", salary);       // %.2f doubles ke liye do decimal places ke saath
   printf("Name: %s\n", name);             // %s strings ke liye
 }
+~~~
 Output
-makefile
-Copy code
+~~~
 Age: 25
 Height: 5.9
 Initial: A
 Salary: 50000.75
 Name: Alice
-Constant
-Constants C mein read-only variables hote hain jinke values program mein declare hone ke baad change nahi kiye jaa sakte.
-Constant ek integer, floating point, string, ya character ho sakte hain.
-C language mein const keyword ka use constant define karne ke liye hota hai.
-Syntax of Declaring Constant
-rust
-Copy code
+~~~
+# Constant
+* Constants C mein read-only variables hote hain jinke values program mein declare hone ke baad change nahi kiye jaa sakte.
+* Constant ek integer, floating point, string, ya character ho sakte hain.
+* C language mein const keyword ka use constant define karne ke liye hota hai.
+### Syntax of Declaring Constant
+~~~
 const data_type var_name = value;
+~~~
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230306215927/syntax-of-constants-in-c.png" alt="Features" height="250px" width="550px">
-WAP of Constant
-arduino
-Copy code
+
+### Constant ka Program
+~~~
 #include <stdio.h>
 int main() {
   // Constant variables declare aur initialize karna using const keyword
@@ -156,16 +162,17 @@ int main() {
 
   return 0;
 }
+~~~
 Output
-less
-Copy code
+~~~
 Number of days in a week: 7
 Number of months in a year: 12
 Highest grade: A
 === Code Execution Successful ===
-Keywords
-Keywords C language mein reserved words ka set hota hai jinka predefined meaning hota hai aur jo C programming likhne mein use hote hain.
-In keywords ka use identifiers ya variable names ke liye nahi ho sakta, kyunki inka ek specific function hota hai language ke andar.
+~~~
+# Keywords
+* Keywords C language mein reserved words ka set hota hai jinka predefined meaning hota hai aur jo C programming likhne mein use hote hain.
+* In keywords ka use identifiers ya variable names ke liye nahi ho sakta, kyunki inka ek specific function hota hai language ke andar.
 <img src="https://techskillguru.com/cdata/cprogramming/images/C-Keywords.png" alt="Features" height="350px" width="350px">
 
 
