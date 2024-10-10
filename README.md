@@ -175,7 +175,7 @@ Highest grade: A
 * In keywords ka use identifiers ya variable names ke liye nahi ho sakta, kyunki inka ek specific function hota hai language ke andar.
 <img src="https://techskillguru.com/cdata/cprogramming/images/C-Keywords.png" alt="Features" height="350px" width="350px
 
-    # Operators
+  # Operators
 * Programming mein, operators wo symbols hote hain jo ek ya zyada operands par operations ko perform karte hain.
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231214120748/Operators-in-C.png" alt="Features" height="350px" width="350px"> 
@@ -193,7 +193,7 @@ Highest grade: A
 | 4      | /      | Divide   | Do numeric values ko divide karta hai.           | a / b   |
 | 5      | %      | Modulus  | Left operand ko right operand se divide karne ke baad remainder return karta hai. | a % b   |
 
-# Program for Arithmetic Operator
+### Program for Arithmetic Operator
 ```
 #include <stdio.h>
 int main() {
@@ -221,18 +221,18 @@ num1/num2 = 0
 num1%num2 = 1
 === Code Execution Successful ===
 ~~~
-# Relational Operators
+## Relational Operators
 * C mein relational operators ka use do operands ka comparison karne ke liye hota hai.
 * Ye saare operators binary operators hain jo comparison ke result mein true ya false value return karte hain.
 Yeh hain Relational Operators:
 | S. No. | Symbol | Operator | Description | Syntax |
 |---|---|---|---|---|
-| 1 | < | Less than | Returns true if the left operand is less than the right operand. Else false | a < b |
-| 2 | > | Greater than | Returns true if the left operand is greater than the right operand. Else false | a > b |
-| 3 | <= | Less than or equal to | Returns true if the left operand is less than or equal to the right operand. Else false | a <= b |
-| 4 | >= | Greater than or equal to | Returns true if the left operand is greater than or equal to right operand. Else false | a >= b |
-| 5 | == | Equal to | Returns true if both the operands are equal. | a == b |
-| 6 | != | Not equal to | Returns true if both the operands are NOT equal. | a != b |
+| 1 | < | Less than |Agar left operand right operand se chhota ho toh true return karta hai. Warna false | a < b |
+| 2 | > | Greater than | Agar left operand right operand se bada ho toh true return karta hai. Warna false | a > b |
+| 3 | <= | Less than or equal to |Agar left operand right operand se chhota ya equal ho toh true return karta hai. Warna false | a <= b |
+| 4 | >= | Greater than or equal to | Agar left operand right operand se bada ya equal ho toh true return karta hai. Warna false | a >= b |
+| 5 | == | Equal to | Agar dono operands barabar ho toh true return karta hai. | a == b |
+| 6 | != | Not equal to | Agar dono operands barabar na ho toh true return karta hai. | a != b |
 
  ### Program for Relational Operators
 ```
@@ -263,14 +263,15 @@ Enter two integers: 10 20
 10 <= 20 is 1
 === Code Execution Successful ===
 ```
-### Logical Operator
+## Logical Operator
 * C mein logical operators ka use true ya false result check karne ke liye kiya jaata hai.
  Yeh hain Logical Operators:
 | Operator    | Symbol | Description                                | Syntax   |
 |-------------|--------|--------------------------------------------|----------|
-| Logical AND | `&&`   | Returns true if both operands are true.     | `a && b` |
-| Logical OR  | `||`   | Returns true if at least one operand is true. | `a || b` |
-| Logical NOT | `!`    | Returns the opposite truth value of the operand. | `!a`     |
+| Logical AND | `&&`   | Tabhi true return karta hai jab dono operands true hoon.    | `a && b` |
+| Logical OR  | `||`   | Tabhi true return krega jb at least ek operand true h. | `a || b` |
+| Logical NOT | `!`    | Operand ki opposite truth value return karta hai.| `!a`     |
+
 ### Program for Logical Operators
 ```
 #include <stdio.h>
@@ -316,6 +317,7 @@ a is positive.
 ## Assignment Operators
 * Assignment operators ka use kisi variable ko value assign karne ke liye hota hai.
   Yeh hain Assignment Operators:
+  
   | S. No. | Symbol | Operator | Description | Syntax |
 |---|---|---|---|---|
 | 1 | = | Simple Assignment | Assign the value of the right operand to the left operand. | `a = b` |
