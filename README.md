@@ -173,9 +173,184 @@ Highest grade: A
 # Keywords
 * Keywords C language mein reserved words ka set hota hai jinka predefined meaning hota hai aur jo C programming likhne mein use hote hain.
 * In keywords ka use identifiers ya variable names ke liye nahi ho sakta, kyunki inka ek specific function hota hai language ke andar.
-<img src="https://techskillguru.com/cdata/cprogramming/images/C-Keywords.png" alt="Features" height="350px" width="350px">
+<img src="https://techskillguru.com/cdata/cprogramming/images/C-Keywords.png" alt="Features" height="350px" width="350px
 
+    # Operators
+* Programming mein, operators wo symbols hote hain jo ek ya zyada operands par operations ko perform karte hain.
 
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231214120748/Operators-in-C.png" alt="Features" height="350px" width="350px"> 
+
+## Arithmetic Operators:
+* Arithmetic operators ka use operands par arithmetic ya mathematical operations perform karne ke liye kiya jaata hai.
+
+### Yeh hain Arithmetic Operators:
+
+| S. No. | Symbol | Operator | Description                                      | Syntax  |
+|--------|--------|----------|--------------------------------------------------|---------|
+| 1      | +      | Plus     | Do numeric values ko jodta hai.                  | a + b   |
+| 2      | –      | Minus    | Right operand ko left operand se ghatata hai.    | a – b   |
+| 3      | *      | Multiply | Do numeric values ko multiply karta hai.         | a * b   |
+| 4      | /      | Divide   | Do numeric values ko divide karta hai.           | a / b   |
+| 5      | %      | Modulus  | Left operand ko right operand se divide karne ke baad remainder return karta hai. | a % b   |
+
+# Program for Arithmetic Operator
+```
+#include <stdio.h>
+int main() {
+   int num1,num2;
+   printf("Enter first number: ");
+   scanf("%d", &num1);
+   printf("Enter Second number: ");
+   scanf("%d", &num2);
+   printf("num1+num2 = %d\n ", num1+num2);
+   printf("num1-num2 = %d\n ", num1-num2);
+   printf("num1*num2 = %d\n ", num1*num2);
+   printf("num1/num2 = %d\n ", num1/num2);
+   printf("num1%num2 = %d\n ", num1%num2);
+   return 0;
+}
+```
+Output
+~~~
+Enter first number: 7
+Enter Second number: 9
+num1+num2 = 16
+num1-num2 = -2
+num1*num2 = 63
+num1/num2 = 0
+num1%num2 = 1
+=== Code Execution Successful ===
+~~~
+# Relational Operators
+* C mein relational operators ka use do operands ka comparison karne ke liye hota hai.
+* Ye saare operators binary operators hain jo comparison ke result mein true ya false value return karte hain.
+Yeh hain Relational Operators:
+| S. No. | Symbol | Operator | Description | Syntax |
+|---|---|---|---|---|
+| 1 | < | Less than | Returns true if the left operand is less than the right operand. Else false | a < b |
+| 2 | > | Greater than | Returns true if the left operand is greater than the right operand. Else false | a > b |
+| 3 | <= | Less than or equal to | Returns true if the left operand is less than or equal to the right operand. Else false | a <= b |
+| 4 | >= | Greater than or equal to | Returns true if the left operand is greater than or equal to right operand. Else false | a >= b |
+| 5 | == | Equal to | Returns true if both the operands are equal. | a == b |
+| 6 | != | Not equal to | Returns true if both the operands are NOT equal. | a != b |
+
+ ### Program for Relational Operators
+```
+#include <stdio.h>
+int main() {
+    int a, b;
+    // Input two integers
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+    //  Relational operators
+    printf("%d == %d is %d\n", a, b, a == b);   // Equal to
+    printf("%d != %d is %d\n", a, b, a != b);   // Not equal to
+    printf("%d > %d is %d\n", a, b, a > b);     // Greater than
+    printf("%d < %d is %d\n", a, b, a < b);     // Less than
+    printf("%d >= %d is %d\n", a, b, a >= b);   // Greater than or equal to
+    printf("%d <= %d is %d\n", a, b, a <= b);   // Less than or equal to
+    return 0;
+}
+```
+### Output
+```
+Enter two integers: 10 20
+10 == 20 is 0
+10 != 20 is 1
+10 > 20 is 0
+10 < 20 is 1
+10 >= 20 is 0
+10 <= 20 is 1
+=== Code Execution Successful ===
+```
+### Logical Operator
+* C mein logical operators ka use true ya false result check karne ke liye kiya jaata hai.
+ Yeh hain Logical Operators:
+| Operator    | Symbol | Description                                | Syntax   |
+|-------------|--------|--------------------------------------------|----------|
+| Logical AND | `&&`   | Returns true if both operands are true.     | `a && b` |
+| Logical OR  | `||`   | Returns true if at least one operand is true. | `a || b` |
+| Logical NOT | `!`    | Returns the opposite truth value of the operand. | `!a`     |
+### Program for Logical Operators
+```
+#include <stdio.h>
+int main() {
+    int a, b;
+    // Input two integers
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    //Logical AND (&&)
+    if (a > 0 && b > 0) {
+        printf("Both a and b are positive.\n");
+    } else {
+        printf("Either a or b (or both) are not positive.\n");
+    }
+
+    // Logical OR (||)
+    if (a > 0 || b > 0) {
+        printf("At least one of a or b is positive.\n");
+    } else {
+        printf("Neither a nor b is positive.\n");
+    }
+
+    // Logical NOT (!)
+    if (!(a > 0)) {
+        printf("a is not positive.\n");
+    } else {
+        printf("a is positive.\n");
+    }
+
+    return 0;
+}
+```
+### Output
+```
+Enter two integers: 10 -10
+Either a or b (or both) are not positive.
+At least one of a or b is positive.
+a is positive.
+
+=== Code Execution Successful ===
+```
+## Assignment Operators
+* Assignment operators ka use kisi variable ko value assign karne ke liye hota hai.
+  Yeh hain Assignment Operators:
+  | S. No. | Symbol | Operator | Description | Syntax |
+|---|---|---|---|---|
+| 1 | = | Simple Assignment | Assign the value of the right operand to the left operand. | `a = b` |
+| 2 | += | Plus and assign | Add the right operand and left operand and assign this value to the left operand. | `a += b` |
+| 3 | -= | Minus and assign | Subtract the right operand and left operand and assign this value to the left operand. | `a -= b` |
+| 4 | *= | Multiply and assign | Multiply the right operand and left operand and assign this value to the left operand. | `a *= b` |
+| 5 | /= | Divide and assign | Divide the left operand with the right operand and assign this value to the left operand. | `a /= b` |
+| 6 | %= | Modulus and assign | Assign the remainder in the division of left operand with the right operand to the left operand. | `a %= b` |
+				
+### Example of Assignment Operators
+```
+#include <stdio.h>
+int main(){
+    int a = 25, b = 5;
+    //  Assignment Operators
+    printf("a = b: %d\n", a = b);
+    printf("a += b: %d\n", a += b);
+    printf("a -= b: %d\n", a -= b);
+    printf("a *= b: %d\n", a *= b);
+    printf("a /= b: %d\n", a /= b);
+    printf("a %= b: %d\n", a %= b);
+    return 0;
+}
+```
+### Output
+```
+a = b: 5
+a += b: 10
+a -= b: 5
+a *= b: 25
+a /= b: 5
+a %= b: 0
+```
+
+## Conditional/ Ternary Operator
 
 
 
