@@ -93,7 +93,8 @@ Visual Studio Code (VS Code) chalane ke liye, aapko apne system ki requirements 
 * VS Code Version: 1.91.1
 * Variables, Constant and Keywords
   
-# Variables
+# Variables, Constant and Keywords
+## Variables
 * Variables programming mein pieces of information ko store karne ke liye use hote hain.
 * Ye ek tarah ke containers hote hain jo kuch data store karte hain (jaise hum rice, dal, sugar ko alag containers mein rakhte hain).
 ### Rules of Naming Variables
