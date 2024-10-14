@@ -173,7 +173,8 @@ Highest grade: A
 # Keywords
 * Keywords C language mein reserved words ka set hota hai jinka predefined meaning hota hai aur jo C programming likhne mein use hote hain.
 * In keywords ka use identifiers ya variable names ke liye nahi ho sakta, kyunki inka ek specific function hota hai language ke andar.
-<img src="https://techskillguru.com/cdata/cprogramming/images/C-Keywords.png" alt="Features" height="350px" width="350px
+  
+<img src="https://techskillguru.com/cdata/cprogramming/images/C-Keywords.png" alt="Features" height="350px" width="350px">
 
   # Operators
 * Programming mein, operators wo symbols hote hain jo ek ya zyada operands par operations ko perform karte hain.
@@ -225,6 +226,7 @@ num1%num2 = 1
 * C mein relational operators ka use do operands ka comparison karne ke liye hota hai.
 * Ye saare operators binary operators hain jo comparison ke result mein true ya false value return karte hain.
 Yeh hain Relational Operators:
+
 | S. No. | Symbol | Operator | Description | Syntax |
 |---|---|---|---|---|
 | 1 | < | Less than |Agar left operand right operand se chhota ho toh true return karta hai. Warna false | a < b |
@@ -266,6 +268,7 @@ Enter two integers: 10 20
 ## Logical Operator
 * C mein logical operators ka use true ya false result check karne ke liye kiya jaata hai.
  Yeh hain Logical Operators:
+
 | Operator    | Symbol | Description                                | Syntax   |
 |-------------|--------|--------------------------------------------|----------|
 | Logical AND | `&&`   | Tabhi true return karta hai jab dono operands true hoon.    | `a && b` |
@@ -316,9 +319,10 @@ a is positive.
 ```
 ## Assignment Operators
 * Assignment operators ka use kisi variable ko value assign karne ke liye hota hai.
-  Yeh hain Assignment Operators:
   
-  | S. No. | Symbol | Operator | Description | Syntax |
+Yeh hain Assignment Operators:
+
+| S. No. | Symbol | Operator | Description | Syntax |
 |---|---|---|---|---|
 | 1 | = | Simple Assignment | Assign the value of the right operand to the left operand. | `a = b` |
 | 2 | += | Plus and assign | Add the right operand and left operand and assign this value to the left operand. | `a += b` |
@@ -353,6 +357,377 @@ a %= b: 0
 ```
 
 ## Conditional/ Ternary Operator
+* Ternary operator ek shorthand tareeka hai if-else statement likhne ka.
+### Syntax 
+```
+Condition? expression-if-true: expression-if-false;
+```
+### Example 
+```
+#include<stdio.h>
+int main(){
+    int a;
+    printf("Enter value of a\n");
+    scanf("%d",&a);
+    (a<5)?printf("A is less than 5"):printf("A is not less than 5");
+    return 0;
+}
+```
+### Output
+```
+Enter value of a
+7
+A is not less than 5ements
+
+=== Code Execution Successful ===
+```
+# Control Statements & Decision Making
+* Control statements woh statements hote hain jo instructions ke execution ka flow control karte hain.
+    <img src="https://examradar.com/wp-content/uploads/2016/10/Classification-of-control-statements.png" alt="Control statements" width="450px" height="350px">
+    ## Branching Statements
+  ### If Statements
+  * "if" statement ek control flow structure hai jo ek block of code ko tabhi execute karta hai jab koi specified condition true ya false ho.
+    ##### Example
+  ```
+  #include <stdio.h>
+  int main() {
+    int number = 10;
+    if (number > 5) {
+        printf("The number is greater than 5.\n");
+     }
+  }
+  ```
+  #### Output
+  ```
+  The number is greater than 5.
+  ```
+  ### If-else Statements
+  * The if-else statement C mein ek conditional control structure hai jo tumhe ek block of code tab execute karne deta hai jab condition true ho, aur doosra block of code tab execute hota hai jab condition false ho.
+     #### Example
+    ```
+    #include <stdio.h>
+     int main() {
+     int number = 3;
+     if (number > 5) {
+        printf("The number is greater than 5.\n");
+       } else {
+        printf("The number is 5 or less.\n");
+       }
+     }
+    ``
+  #### Output
+  ```
+  The number is 5 or less.
+  ```
+  ### If-else-if Statements
+  * The if-else if statement C mein multiple conditions ko sequence mein test karne ke liye use hota hai.
+* Yeh tumhe alag-alag blocks of code ko execute karne ka mauka deta hai, is baat par depend karta hai kaunsi condition true hoti hai.
+  #### Example
+    ```
+    #include <stdio.h>  
+    int main() {
+    int number = 0;
+    if (number > 0) {
+        printf("The number is positive.\n");
+    } else if (number < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+     }
+    }
+   ```
+#### Output
+```
+The number is zero.
+```
+### Switch Statements
+* The switch statement C mein ek control flow structure hai jo expression ki value ke basis par alag-alag code blocks ko execute karne ki suvidha deta hai.
+  #### Example
+```
+#include <stdio.h>
+int main() {
+    int day = 3;
+    switch (day) {
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wednesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        case 6:
+            printf("Saturday\n");
+            break;
+        case 7:
+            printf("Sunday\n");
+            break;
+        default:
+            printf("Invalid day\n");
+            break;
+    }
+}
+```
+#### Output
+```
+Wednesday
+```
+## Iterative/ Loop Statements 
+* Iterative ya loop statements unhe kehte hain jo ek block of code ko condition ke basis par baar-baar execute karte hain.
+* Yeh repetitive tasks ko efficiently perform karne ki suvidha dete hain bina same code ko baar-baar likhne ke.
+### For Loop
+* Loop statements ka use instructions ke set ko repeated order mein execute karne ke liye hota hai.
+* Instructions ka execution ek particular condition par depend karta hai.
+   #### Syntax of for Loop
+   ```
+   for (initialization; condition; Increment/decrement) {
+    // Code to execute on each iteration
+    }
+   ```
+     #### Example
+    ```
+    #include <stdio.h>
+     int main() {
+    // Loop from 0 to 4
+    for (int i = 0; i < 5; i++) {
+        printf("Number %d\n", i);
+      }
+    }
+    
+   ```
+### Output
+
+```
+Number 0
+Number 1
+Number 2
+Number 3
+Number 4
+```
+### While Loop
+* The while loop C mein ek control flow statement hai jo tumhe ek block of code tab tak baar-baar execute karne deta hai jab tak specified condition true hoti hai.
+ #### Syntax of While Loop
+  ```
+  while (condition) {
+  // code block to be executed
+   }
+  ```
+#### Example
+```
+#include <stdio.h>
+int main() {
+    int i = 0;
+    // Loop from 0 to 4
+    while (i < 5) {
+        printf("Number %d\n", i);
+        i++; // Increment the loop variable
+    }
+ }
+```
+#### Output
+```
+Number 0
+Number 1
+Number 2
+Number 3
+Number 4
+```
+### do While Loop
+* The do-while loop ek control flow statement hai jo tumhe ek block of code ko tab tak baar-baar execute karne deta hai jab tak specified condition true hoti hai.
+* Do-while loop mein body ko kam se kam ek baar toh execute kiya jaata hai condition test karne se pehle.
+ ####  Syntax of do While Loop
+ ```
+ do {
+    // Code to execute at least once and then repeatedly while condition is true
+  } while (condition);
+```
+#### Example
+```
+#include <stdio.h>
+int main() {
+    int i = 0;
+    // Loop that runs as long as i is less than 5
+    do {
+        printf("Number %d\n", i);
+        i++; // Increment the loop variable
+    } while (i < 5);
+ }
+```
+#### Output
+```
+Number 0
+Number 1
+Number 2
+Number 3
+Number 4
+```
+## Jump Statements
+* Jump statements C programming language mein programmers ko apne code ke normal flow of execution ko alter (badalne) ki suvidha dete hain.
+* Jump statements 3 types ke hote hain.
+  i)   Break
+ ii)  continue
+  ### Break Statements
+  *The break statement ka use loop se bahar nikalne ke liye kiya jaata hai.
+#### Example
+    ```
+    #include <stdio.h>
+    int main() {
+    for (int i = 0; i < 10; i++) {
+        if (i == 5) {
+            break; // Exit the loop when i equals 5
+        }
+        printf("%d ", i);
+      }
+    }
+    ```
+#### Output
+```
+0 1 2 3 4
+```
+### Continue Statements
+* The continue statement ka use current iteration ke liye loop body ke bache hue part ko skip karne aur loop ke agle iteration par jaane ke liye kiya jaata hai.
+  #### Example
+  ```
+  #include <stdio.h>
+   int main() {
+    for (int i = 0; i < 10; i++) {
+        if (i % 2 == 0) {
+            continue; // Skip the rest of the loop body for even numbers
+        }
+        printf("%d ", i);
+    }
+    return 0;
+  }
+  ```
+#### Output
+```
+1 3 5 7 9 
+```
+# Pointer
+* Ek pointer ek variable hai jo kisi doosre variable ka address store karta hai.
+   ## Syntax of pointer
+  ```
+  datatype * ptr;
+  where,
+      ptr is the name of the pointer.
+      datatype is the type of data it is pointing to.
+  ```
+  ## Address Of (&) Operator
+  * Address of operator '&' ek variable ka address return karta hai.
+  * Lekin, variable ka address display karne ke liye hume % ka use karna padta hai.
+     ## Example of Pointer
+  ```
+  #include <stdio.h>
+  int main() {
+  int a=6;
+  int *ptr;
+  ptr=&a;
+  printf("The address of variable a is %u\n",ptr);
+  printf("The address of variable a is %u\n",*ptr);
+    }
+``
+### Output
+```
+The address of variable a is 1763721828
+The address of variable a is 6
+```
+ # Array
+ * Ek array similar type ke elements ka collection hota hai.
+* Yeh ek simple aur fast tareeka hai multiple values ko ek hi naam ke neeche store karne ka.
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230302091959/Arrays-in-C.png" alt="Array" height="350px" width="450px">
+    ## Syntax of Array
+   ```
+   data_type array_name [size1] [size2]...[sizeN];
+   ```
+   ## Example
+   ```
+   #include <stdio.h>
+   int main() {
+   int marks[5];
+   for(int i=0;i<5;i++){
+     printf("Enter the English marks of students %d :",i+1);
+     scanf("%d",&marks[i]);
+    }
+   }
+  ``
+## Output
+```
+Enter the English marks of students 1 :70
+Enter the English marks of students 2 :60
+Enter the English marks of students 3 :90
+Enter the English marks of students 4 :98
+Enter the English marks of students 5 :78
+
+=== Code Execution Successful ===
+```
+# String
+* C mein, ek string ko characters ki sequence ke roop mein define kiya jaata hai jo ek special character, jise null character ('\0') kaha jaata hai, se terminate hoti hai.
+
+* Yeh null character string ke end ko indicate karta hai.
+## Initializing Strings
+* Kyunki string characters ka array hai, isliye ise is tarah se initialize kiya ja sakta hai:
+  <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/6492a64d1cd59_strings_in_c_03.jpg" alt="string" height="350px" width="450px">
+ ## Printing Strings
+ * Ek string ko character by character print kiya ja sakta hai using printf aur %s.
+    ### Example
+      ```
+      #include<stdio.h>
+      int main(){
+      char st[]="hello isha";
+      printf("%s",st);
+        }
+      ```
+     
+### Output
+
+```
+hello isha
+```
+## gets() and puts()
+* gets() is a function which can be used to recieve a multi-word string.
+* puts() is a function in a string to the print the output in a newline.
+   ### Example
+  ```
+  #include<stdio.h>
+   int main(){
+    char s[34];
+    printf("Enter your name : ");
+    gets(s);
+    puts(s);
+    printf("Your Name is %s ",s);   
+  }
+  ```
+ ### Output
+```
+Enter your name : ISHA JANGRA
+ISHA JANGRA
+Your Name is ISHA JANGRA
+```
+ # References
+ 
+* https://www.studocu.com/row/document/tribhuvan-vishwavidalaya/information-technology/c-programming-notes/2664815
+* https://www.geeksforgeeks.org/operators-in-c/
+* https://www.scholarhat.com/tutorial/c/loops-in-c
+* https://www.javatpoint.com/c-gets-puts#:~:text=C%20puts()%20function&text=The%20puts()%20function%20is,being%20printed%20on%20the%20console.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
