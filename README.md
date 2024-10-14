@@ -180,6 +180,7 @@ Highest grade: A
 * Programming mein, operators wo symbols hote hain jo ek ya zyada operands par operations ko perform karte hain.
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231214120748/Operators-in-C.png" alt="Features" height="350px" width="350px"> 
+* Note :- Operators ki or jankari k liye is link ko follow kre : <a href="https://www.geeksforgeeks.org/operators-in-c/">https://www.geeksforgeeks.org/operators-in-c</a>
 
 ## Arithmetic Operators:
 * Arithmetic operators ka use operands par arithmetic ya mathematical operations perform karne ke liye kiya jaata hai.
@@ -610,6 +611,7 @@ Number 4
 ```
 1 3 5 7 9 
 ```
+* Note :- About goto statements : <a href="https://www.javatpoint.com/c-goto">https://www.javatpoint.com/c-goto</a>
 # Pointer
 * Ek pointer ek variable hai jo kisi doosre variable ka address store karta hai.
    ## Syntax of pointer
@@ -691,8 +693,8 @@ Enter the English marks of students 5 :78
 hello isha
 ```
 ## gets() and puts()
-* gets() is a function which can be used to recieve a multi-word string.
-* puts() is a function in a string to the print the output in a newline.
+* gets() ek function hai jo multi-word string ko receive karne ke liye use kiya ja sakta hai.
+* puts() ek function hai jo string ko print karta hai aur output ko ek newline par le jaata hai.
    ### Example
   ```
   #include<stdio.h>
