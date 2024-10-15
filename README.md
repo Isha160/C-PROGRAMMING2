@@ -6,7 +6,7 @@
 - [Introduction](#Introduction)
 - [Installation](#Installation)
 - [System Requirement](#System-Requirement)
-- [Variables, Constant and Keywords](#Variables,-Constant-and-Keywords)
+- [Variables, Constant and Keywords](#Variables-Constant-and-Keywords)
 - [Operators](#Operators) 
 - [Control Statements & Decision Making](#Control-Statements-&-Decision-Making)
 - [Pointer](#Pointer)
