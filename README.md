@@ -53,6 +53,46 @@ Output
 ~~~
 Hello World
 ~~~
+## Note:why int main() and not char main() or int main(void) ?
+* We use int main() function as it is standard declaration for the c programming, it specifies that the function returns an integer value. 
+for example:
+```
+#include <stdio.h>
+int main(void) {
+    printf("Hello world");
+}
+Output: Hello world
+```
+char main() function is not valid and we can’t use it. Our compiler cannot be able to compile the program, it will show a warning or error to us.
+```
+#include <stdio.h>
+char main(void) {
+    printf("Hello world");
+    return'A';
+Output: something went wrong!
+}
+```
+In conclusion, I would like to say int main()is the standard and correct way to define the main function, which is the entry point of the programs. 
+
+* Also we can use int main(void) function as void name itself implies empty so no parameters are accepted in this function. If we use void as function so we dont need to return anything.
+Program with int main()
+```
+#include <stdio.h>
+int main() {
+    printf("Hello world");
+}
+Output: Hello world
+```
+Program with int main(void)
+```
+#include <stdio.h>
+int main(void) {
+    printf("Hello world");
+}
+Output: Hello world
+```
+Both program are acceptable , int main(void) is generally preferred when you want to make it clear that no arguments will passed.
+
 ### Explanation of code
 * #include<stdio.h> : means any line starting with # represents a preprocessing command. It tells our program that before its execution, it must include the stdio.h  file in it because we are using some of the commands or codes from this file and Stdio.h stands for standard input output and .h indicates that it’s header file. It helps to take input and show output by using of printf() and scanf() functions.
 * int main() : int stands for integer and main() is the function. int: Tells that the main() function will return an integer and main() is the starting point of the program where the execution begins.
