@@ -15,15 +15,15 @@
 - [References](#References)
 
 # Introduction 
-* Programming- Computer programming ek medium hai jisse hum computers se communicate karte hain. Jaise insaan Hindi/English language ka use karke ek dusre se communicate karte hain, waise hi Programming ek tareeka hai jisse hum apne 
+* Programming- Computer programming ek medium hai jisse hum computers se communicate karte hain. Jaise humans Hindi/English language ka use karke ek dusre se communicate karte hai, waise hi Programming ek tareeka hai jisse hum apne 
     instructions computer ko deliver karte hain unse communicate krne k liye.
-* C ek sabse purani Programming languages mein se ek hai, jo Dennis Ritchie ne 1972 mein develop ki thi.
+* C ek sabse purani Programming languages mein se ek hai, jo Dennis Ritchie ne 1972 me develop ki thi.
 
 # Features 
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/08/Features-of-C.jpg" alt="Features" height="350px" width="350px">
 
 # Comments in C
-C language mein do tarah ke comments hote hain:
+C Programming me do tarah ke comments hote hain:
 1- Single-line comment
 2- Multi-line comment
 
@@ -61,7 +61,7 @@ Visual Studio Code ko download karne ke liye, aapko neeche diye gaye steps ko fo
 
 * Step 2:- Pehli link par click karo.<a href="https://code.visualstudio.com/download">Visual Studio Code</a>
 
-* Step 3:- Apne Operating System ke hisaab se sahi download option select karo. Agar aap Ubuntu use kar rahe ho, to aapka download ek .deb file hoga.
+* Step 3:- Apne Operating System ke hisaab se sahi option select karo. Agar aap Ubuntu use kar rahe ho, to aapka download ek .deb file hoga.
 
 <img src="https://res.cloudinary.com/omaha-code/w_768,h_502,c_fit/omaha-code-cdn/2018/12/Download-Visual-Studio-Code.png" alt="VS Code" height="350px" width="450px">
 
@@ -75,12 +75,12 @@ Visual Studio Code ko download karne ke liye, aapko neeche diye gaye steps ko fo
 
 * Step 9:- Agar dependencies fix karni hain to ye command run karo: sudo apt install -f
 
-* Step 10:- VS Code ko launch karo:- Aap VS Code ko terminal mein code type karke ya application menu mein dhoondh kar open kar sakte ho.
+* Step 10:- VS Code ko launch karo:- Aap VS Code ko terminal mein code type karke ya application menu mein dhoondh kar open kar sakte hai.
 
 
 
 # System Requirement
-Visual Studio Code (VS Code) chalane ke liye, aapko apne system ki requirements ko ensure karna hoga. Niche di gayi requirements ko aapko meet karna hoga:
+Visual Studio Code (VS Code) chalane ke liye, aapko apne system ki requirements ko ensure karna hoga. Niche di gayi requirements ko aapko fulfill karna hoga:
 
 * OS: Ubuntu 14.04+, Fedora 24+, CentOS 7+
 * RAM: Kam se kam 4 GB RAM (8 GB ya usse zyada recommended)
@@ -134,7 +134,7 @@ Salary: 50000.75
 Name: Alice
 ~~~
 # Constant
-* Constants C mein read-only variables hote hain jinke values program mein declare hone ke baad change nahi kiye jaa sakte.
+* Constants read-only variables hote hain, jinke values program mein declare hone ke baad change nahi kiye jaa sakti.
 * Constant ek integer, floating point, string, ya character ho sakte hain.
 * C language mein const keyword ka use constant define karne ke liye hota hai.
 ### Syntax of Declaring Constant
@@ -173,7 +173,7 @@ Highest grade: A
 === Code Execution Successful ===
 ~~~
 # Keywords
-* Keywords C language mein reserved words ka set hota hai jinka predefined meaning hota hai aur jo C programming likhne mein use hote hain.
+* Keywords C language mein reserved words hote hai, jinka predefined meaning hota hai aur jo C programming likhne mein use hote hain.
 * In keywords ka use identifiers ya variable names ke liye nahi ho sakta, kyunki inka ek specific function hota hai language ke andar.
   
 <img src="https://techskillguru.com/cdata/cprogramming/images/C-Keywords.png" alt="Features" height="350px" width="350px">
@@ -191,11 +191,11 @@ Highest grade: A
 
 | S. No. | Symbol | Operator | Description                                      | Syntax  |
 |--------|--------|----------|--------------------------------------------------|---------|
-| 1      | +      | Plus     | Do numeric values ko jodta hai.                  | a + b   |
-| 2      | –      | Minus    | Right operand ko left operand se ghatata hai.    | a – b   |
-| 3      | *      | Multiply | Do numeric values ko multiply karta hai.         | a * b   |
-| 4      | /      | Divide   | Do numeric values ko divide karta hai.           | a / b   |
-| 5      | %      | Modulus  | Left operand ko right operand se divide karne ke baad remainder return karta hai. | a % b   |
+| 1      | +      | Plus     | Do number ko jodta hai.                          | a + b   |
+| 2      | –      | Minus    | Do number ko Subtract krta hai                   | a – b   |
+| 3      | *      | Multiply | Do number ko multiply karta hai.                 | a * b   |
+| 4      | /      | Divide   | Do number ko divide karta hai.                   | a / b   |
+| 5      | %      | Modulus  | Do number ka divide karne ke baad remainder return karta hai. | a % b   |
 
 ### Program for Arithmetic Operator
 ```
@@ -269,7 +269,7 @@ Enter two integers: 10 20
 === Code Execution Successful ===
 ```
 ## Logical Operator
-* C mein logical operators ka use true ya false result check karne ke liye kiya jaata hai.
+* C Programming mein logical operators ka use true ya false result check karne ke liye kiya jaata hai.
  Yeh hain Logical Operators:
 
 | Operator    | Symbol | Description                                | Syntax   |
@@ -385,7 +385,7 @@ A is not less than 5ements
 === Code Execution Successful ===
 ```
 # Control Statements and Decision Making
-* Control statements woh statements hote hain jo instructions ke execution ka flow control karte hain.
+* Control statements wo statements hote hain jo instructions ke execution ka flow control karte hain.
     <img src="https://examradar.com/wp-content/uploads/2016/10/Classification-of-control-statements.png" alt="Control statements" width="450px" height="350px">
     ## Branching Statements
   ### If Statements
