@@ -53,6 +53,11 @@ Output
 ~~~
 Hello World
 ~~~
+### Explanation of code
+* #include<stdio.h> : means any line starting with # represents a preprocessing command. It tells our program that before its execution, it must include the stdio.h  file in it because we are using some of the commands or codes from this file and Stdio.h stands for standard input output and .h indicates that it’s header file. It helps to take input and show output by using of printf() and scanf() functions.
+* int main() : int stands for integer and main() is the function. int: Tells that the main() function will return an integer and main() is the starting point of the program where the execution begins.
+* printf("hello world"); This line is responsible to print output. We use printf() function to print values.
+* return 0; it means it ends the main() function and returns 0, which tells us that the program run without any error.
 
 # Installation
 Visual Studio Code ko download karne ke liye, aapko neeche diye gaye steps ko follow karna hoga:
