@@ -385,11 +385,11 @@ A is not less than 5ements
 === Code Execution Successful ===
 ```
 # Control Statements and Decision Making
-* Control statements wo statements hote hain jo instructions ke execution ka flow control karte hain.
+* Control statements wo statements hote hain jo instructions ke execution k flow ko control karte hain.
     <img src="https://examradar.com/wp-content/uploads/2016/10/Classification-of-control-statements.png" alt="Control statements" width="450px" height="350px">
     ## Branching Statements
   ### If Statements
-  * "if" statement ek control flow structure hai jo ek block of code ko tabhi execute karta hai jab koi specified condition true ya false ho.
+  * "if" statement ek control flow structure hai jo ek block code ko tabhi execute karta hai jab koi specified condition true ya false ho.
     ##### Example
   ```
   #include <stdio.h>
@@ -405,7 +405,7 @@ A is not less than 5ements
   The number is greater than 5.
   ```
   ### If-else Statements
-  * The if-else statement C mein ek conditional control structure hai jo tumhe ek block of code tab execute karne deta hai jab condition true ho, aur doosra block of code tab execute hota hai jab condition false ho.
+  * The if-else statement ek conditional control structure hai jo hume ek block of code tab execute karne deta hai jab condition true ho, aur doosra block of code tab execute hota hai jab condition false ho.
      #### Example
     ```
     #include <stdio.h>
@@ -423,8 +423,8 @@ A is not less than 5ements
   The number is 5 or less.
   ```
   ### If-else-if Statements
-  * The if-else if statement C mein multiple conditions ko sequence mein test karne ke liye use hota hai.
-* Yeh tumhe alag-alag blocks of code ko execute karne ka mauka deta hai, is baat par depend karta hai kaunsi condition true hoti hai.
+  * The if-else if statement multiple conditions ko sequence me test karne ke liye use hota hai.
+* Yeh tumhe alag-alag blocks of code ko execute karne ka mauka deta hai, ye is baat par depend karta hai kaunsi condition true hoti hai.
   #### Example
     ```
     #include <stdio.h>  
@@ -572,7 +572,7 @@ Number 3
 Number 4
 ```
 ## Jump Statements
-* Jump statements C programming language mein programmers ko apne code ke normal flow of execution ko alter (badalne) ki suvidha dete hain.
+* Jump statements C programming me programmers ko apne code ke normal flow of execution ko alter (badalne) ki suvidha dete hain.
 * Jump statements 3 types ke hote hain.
   i)   Break
  ii)  continue
@@ -644,7 +644,7 @@ The address of variable a is 6
 ```
  # Array
  * Ek array similar type ke elements ka collection hota hai.
-* Yeh ek simple aur fast tareeka hai multiple values ko ek hi naam ke neeche store karne ka.
+* Yeh ek simple aur fast tareeka hai multiple values ko ek hi naam ke sath store karne ka.
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230302091959/Arrays-in-C.png" alt="Array" height="350px" width="450px">
     ## Syntax of Array
    ```
@@ -672,14 +672,13 @@ Enter the English marks of students 5 :78
 === Code Execution Successful ===
 ```
 # String
-* C mein, ek string ko characters ki sequence ke roop mein define kiya jaata hai jo ek special character, jise null character ('\0') kaha jaata hai, se terminate hoti hai.
-
+* C Programming me, String ko characters ki ek sequence ke roop mein define kiya jaata hai, jo ek special character se khatam hoti hai, jise null character ('\0') kha jata hain.
 * Yeh null character string ke end ko indicate karta hai.
 ## Initializing Strings
-* Kyunki string characters ka array hai, isliye ise is tarah se initialize kiya ja sakta hai:
+* Kyunki string characters ka array hai, isliye ise is tarah se initialize kiya jata hai:
   <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/6492a64d1cd59_strings_in_c_03.jpg" alt="string" height="350px" width="450px">
  ## Printing Strings
- * Ek string ko character by character print kiya ja sakta hai using printf aur %s.
+ * Ek string ko character by character print kiya ja sakta hai by using "printf" aur "%s".
     ### Example
       ```
       #include<stdio.h>
