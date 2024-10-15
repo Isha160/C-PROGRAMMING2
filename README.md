@@ -54,13 +54,13 @@ Output
 Hello World
 ~~~
 ### Explanation of code
-* #include<stdio.h> : means any line starting with # represents a preprocessing command. It tells our program that before its execution, it must include the stdio.h  file in it because we are using some of the commands or codes from this file and Stdio.h stands for standard input output and .h indicates that it’s header file. It helps to take input and show output by using of printf() and scanf() functions.
-* int main() : int stands for integer and main() is the function. int: Tells that the main() function will return an integer and main() is the starting point of the program where the execution begins.
-* printf("hello world"); This line is responsible to print output. We use printf() function to print values.
-* return 0; it means it ends the main() function and returns 0, which tells us that the program run without any error.
-
+* #include<stdio.h> : Koi bhi line jo # se shuru hoti hai, ek preprocessing command ko represent karti hai. Yeh hamare program ko yeh batati hai ki execution se pehle, usse stdio.h file ko include karna padega, kyunki hum is file ke kuch commands ya codes ka use kar rahe hain. Stdio.h ka matlab hai standard input output, aur .h indicate karta hai ki yeh ek header file hai. Yeh input lene aur output dikhane mein madad karta hai printf() aur scanf() functions ke zariye.
+* int main() : int stands for integer and main() is the function.int: Yeh batata hai ki main() function ek integer return karega aur main() program ka starting point hota hai jahan se execution shuru hoti hai. 
+* printf("hello world"); Yeh line output print karne ke liye responsible hai. Hum printf() function ka use karte hain values ko print karne ke liye.
+* return 0; Iska matlab hai yeh main() function ko end karta hai aur 0 return karta hai, jo batata hai ki program bina kisi error ke successfully run hua hai.
+  
 ## Note: Why int main() and not char main() or int main(void) ?
-* We use int main() function as it is standard declaration for the c programming, it specifies that the function returns an integer value. 
+* Hum int main() function ka use karte hain kyunki yeh C programming ka standard method hai declaration ka, jo yeh specify karta hai ki function ek integer value return karega.
 for example:
 ```
 #include <stdio.h>
@@ -69,7 +69,7 @@ int main(void) {
 }
 Output: Hello world
 ```
- char main() function is not valid and we can’t use it. Our compiler cannot be able to compile the program, it will show a warning or error to us.
+char main() function valid nahi hai aur hum ise use nahi kar sakte. Hamara compiler program ko compile nahi kar paayega, aur yeh hume warning ya error message dikhayega.
 ```
 #include <stdio.h>
 char main(void) {
@@ -78,9 +78,9 @@ char main(void) {
 Output: something went wrong!
 }
 ```
- In conclusion, I would like to say int main()is the standard and correct way to define the main function, which is the entry point of the programs. 
+ In conclusion, int main() standard aur sahi tareeqa hai main function ko define karne ka, jo programs ka entry point hota hai. 
 
-* Also we can use int main(void) function as void name itself implies empty so no parameters are accepted in this function. If we use void as function so we dont need to return anything.
+* Also we can use int main(void) function jese void ka meaning empty hota hai, isliye is function mein koi parameters accept nahi kiye jaate.  Agar hum void ka istemal karte hain, toh humein kuch return karne ki zaroorat nahi hoti.
 Program with int main()
 ```
 #include <stdio.h>
@@ -97,7 +97,7 @@ int main(void) {
 }
 Output: Hello world
 ```
-Both program are acceptable , int main(void) is generally preferred when you want to make it clear that no arguments will passed.
+Both program are acceptable, int main(void) ka istemal tab kiya jaata hai jab aap yeh spasht karna chahte hain ki koi arguments pass nahi kiye jaayega.
 
 # Installation
 Visual Studio Code ko download karne ke liye, aapko neeche diye gaye steps ko follow karna hoga:
