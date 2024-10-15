@@ -275,7 +275,7 @@ Enter two integers: 10 20
 | Operator    | Symbol | Description                                | Syntax   |
 |-------------|--------|--------------------------------------------|----------|
 | Logical AND | `&&`   | Tabhi true return karta hai jab dono operands true hoon.    | `a && b` |
-| Logical OR  | `||`   | Tabhi true return krega jb at least ek operand true h. | `a || b` |
+| Logical OR  | `\|\|`   | Tabhi true return krega jb at least ek operand true h. | `a \|\| b` |
 | Logical NOT | `!`    | Operand ki opposite truth value return karta hai.| `!a`     |
 
 ### Program for Logical Operators
