@@ -53,7 +53,7 @@ Output
 ~~~
 Hello World
 ~~~
-## Note:why int main() and not char main() or int main(void) ?
+## Note: Why int main() and not char main() or int main(void) ?
 * We use int main() function as it is standard declaration for the c programming, it specifies that the function returns an integer value. 
 for example:
 ```
@@ -63,7 +63,7 @@ int main(void) {
 }
 Output: Hello world
 ```
-char main() function is not valid and we can’t use it. Our compiler cannot be able to compile the program, it will show a warning or error to us.
+ char main() function is not valid and we can’t use it. Our compiler cannot be able to compile the program, it will show a warning or error to us.
 ```
 #include <stdio.h>
 char main(void) {
@@ -72,7 +72,7 @@ char main(void) {
 Output: something went wrong!
 }
 ```
-In conclusion, I would like to say int main()is the standard and correct way to define the main function, which is the entry point of the programs. 
+ In conclusion, I would like to say int main()is the standard and correct way to define the main function, which is the entry point of the programs. 
 
 * Also we can use int main(void) function as void name itself implies empty so no parameters are accepted in this function. If we use void as function so we dont need to return anything.
 Program with int main()
