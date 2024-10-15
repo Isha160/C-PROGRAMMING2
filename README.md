@@ -8,7 +8,7 @@
 - [System Requirement](#System-Requirement)
 - [Variables, Constant and Keywords](#Variables-Constant-and-Keywords)
 - [Operators](#Operators) 
-- [Control Statements & Decision Making](#Control-Statements-&-Decision-Making)
+- [Control Statements and Decision Making](#Control-Statements-and-Decision-Making)
 - [Pointer](#Pointer)
 - [Array](#Array)
 - [String](#String)
@@ -383,7 +383,7 @@ A is not less than 5ements
 
 === Code Execution Successful ===
 ```
-# Control Statements & Decision Making
+# Control Statements and Decision Making
 * Control statements woh statements hote hain jo instructions ke execution ka flow control karte hain.
     <img src="https://examradar.com/wp-content/uploads/2016/10/Classification-of-control-statements.png" alt="Control statements" width="450px" height="350px">
     ## Branching Statements
