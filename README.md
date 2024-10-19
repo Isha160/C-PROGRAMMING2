@@ -679,13 +679,13 @@ Number 4
   int *ptr;
   ptr=&a;
   printf("The address of variable a is %u\n",ptr);
-  printf("The address of variable a is %u\n",*ptr);
+  printf("The value of variable a is %u\n",*ptr);
     }
 ``
 ### Output
 ```
 The address of variable a is 1763721828
-The address of variable a is 6
+The value of variable a is 6
 ```
 ## NULL Pointer
 * Ek pointer jo kisi bhi value ko assign nahi kiya gaya usse NULL pointer kaha jata hai. 
