@@ -687,6 +687,17 @@ Number 4
 The address of variable a is 1763721828
 The address of variable a is 6
 ```
+## NULL Pointer
+* Ek pointer jo kisi bhi value ko assign nahi kiya gaya usse NULL pointer kaha jata hai. 
+* Note: NULL pointer ek constant hota hai jiski value zero hoti hai.
+Example:
+```
+int *p = NULL;
+printf("The value of p is: %d\n",*p);
+```
+```
+ Output: The value of p is: 0
+```
  # Array
  * Ek array similar type ke elements ka collection hota hai.
 * Yeh ek simple aur fast tareeka hai multiple values ko ek hi naam ke sath store karne ka.
