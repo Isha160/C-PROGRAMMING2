@@ -761,8 +761,8 @@ char string_name[size];
 ~~~
 * string_name is a name given to the string variable 
 * size is used to define the length of the string, i.e the number of characters strings will store.
-  
-  ### Method of String Initialization
+
+ ## Method of String Initialization
   
  ###### 1. Assigning a String without Size
 ~~~
