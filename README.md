@@ -716,6 +716,38 @@ Enter the English marks of students 5 :78
 
 === Code Execution Successful ===
 ```
+## Types of Array
+There are two types of array i.e.
+ i) One Dimensional Array (1D Array)
+ ii) Multidimensional Array
+### One Dimensional Array
+* One-dimensional arrays wo arrays hote hain jinke paas sirf ek hi dimension hota hai.
+* Syntax: DataType ArrayName [size];
+* For example: int a[10];
+  
+  <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230302093316/1d-array.png" alt="oneD array" height="300px" width="300px">
+  
+### Multi-Dimensional Arrays
+* Multi-dimensional arrays C mein wo arrays hote hain jinke paas ek se jyada dimensions hote hain.
+* Multi-dimensional arrays ki do categories hoti hai:
+   i) Two-Dimensional Arrays
+  ii)Three-Dimensional Arrays
+  #### Two-Dimensional Arrays
+* Two-dimensional array ya 2D array ek aisa array hota hai jiske paas exactly do dimensions hote hain.
+* Isko rows aur columns ke form mein visualize kiya ja sakta hai jo ek two-dimensional plane mein organized hote hain.
+* Syntax: DataType ArrayName[row_size][column_size];
+* For Example: int arr[5][5];
+
+ <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230302093139/2d-array.png" alt="oneD array" height="300px" width="300px">
+ 
+ #### Three-Dimensional Arrays
+* 3D array mein exactly teen dimensions hote hain.
+*  Isko aise visualize kiya ja sakta hai jaise kai 2D arrays ek ke upar ek stacked hote hain, jo teesra dimension banate hain.
+*  Syntax: DataType ArrayName[size1][size2][size3];
+* For Example: int a[5][5][5];
+
+ <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230302093224/3d-array.png" alt="oneD array" height="300px" width="300px">
+
 # String
 * C Programming me, String ko characters ki ek sequence ke roop mein define kiya jaata hai, jo ek special character se khatam hoti hai, jise null character ('\0') kha jata hain.
 * Yeh null character string ke end ko indicate karta hai.
