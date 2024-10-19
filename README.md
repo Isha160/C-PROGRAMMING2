@@ -755,13 +755,15 @@ There are two types of array i.e.
 * Kyunki string characters ka array hai, isliye ise is tarah se initialize kiya jata hai:
   <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/6492a64d1cd59_strings_in_c_03.jpg" alt="string" height="350px" width="450px">
 
-  ### String Declaration Syntax
+## String Declaration Syntax
 ~~~
 char string_name[size];
 ~~~
 * string_name is a name given to the string variable 
 * size is used to define the length of the string, i.e the number of characters strings will store.
-  #### String Initialization
+  
+  ### Method of String Initialization
+  
  ###### 1. Assigning a String without Size
 ~~~
 char str[] = "Hello, Isha Jangra. How are you?";
