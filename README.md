@@ -754,6 +754,31 @@ There are two types of array i.e.
 ## Initializing Strings
 * Kyunki string characters ka array hai, isliye ise is tarah se initialize kiya jata hai:
   <img src="https://d8it4huxumps7.cloudfront.net/uploads/images/6492a64d1cd59_strings_in_c_03.jpg" alt="string" height="350px" width="450px">
+
+  ### String Declaration Syntax
+~~~
+char string_name[size];
+~~~
+* string_name is a name given to the string variable 
+* size is used to define the length of the string, i.e the number of characters strings will store.
+  #### String Initialization
+ ###### 1. Assigning a String without Size
+~~~
+char str[] = "Hello, Isha Jangra. How are you?";
+~~~
+##### 2. Assigning a String with a Predefined Size
+~~~
+char str[50] = "Hello, Isha Jangra. How are you?";
+~~~
+###### 3. Assigning Character by Character with Size
+~~~
+char str[11] = { 'I','S','H','A','J','A','N','G','R','A','\0'};
+~~~
+###### 4. Assigning Character by Character without Size
+char str[] = {'I','S','H','A','J','A','N','G','R','A','\0' };
+
+NOTE: Ek extra terminating character hota hai jo Null character ('\0') kehlata hai, jo string ki termination ko indicate karta hai. Yeh strings ko normal character arrays se alag banata hai.
+
  ## Printing Strings
  * Ek string ko character by character print kiya ja sakta hai by using "printf" aur "%s".
     ### Example
@@ -770,6 +795,7 @@ There are two types of array i.e.
 ```
 hello isha
 ```
+
 ## gets() and puts()
 * gets() ek function hai jo multi-word string ko receive karne ke liye use kiya ja sakta hai.
 * puts() ek function hai jo string ko print karta hai aur output ko ek newline par le jaata hai.
@@ -796,18 +822,6 @@ Your Name is ISHA JANGRA
 * https://www.geeksforgeeks.org/operators-in-c/
 * https://www.scholarhat.com/tutorial/c/loops-in-c
 * https://www.javatpoint.com/c-gets-puts#:~:text=C%20puts()%20function&text=The%20puts()%20function%20is,being%20printed%20on%20the%20console.
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
